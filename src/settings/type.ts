@@ -1,8 +1,9 @@
-import { Dispatch, ReactNode } from 'react';
+import { ComponentType, Dispatch, LazyExoticComponent, ReactNode } from 'react';
 
 export enum ActionType {
   Page = 'page',
   LoadingProcess = 'loadingProcess',
+  Node = 'node',
 }
 
 export enum LoadingProcessType {
@@ -35,10 +36,16 @@ export type TLoadingProcessState = {
 export interface IState {
   page?: string;
   loadingProcess?: TLoadingProcessState;
+  node: LazyExoticComponent<ComponentType<any>>;
 }
 
 export interface IAction {
-  state: IState | TLoadingProcessState;
+  state:
+    | IState
+    | TLoadingProcessState
+    | string
+    | ReactNode
+    | LazyExoticComponent<ComponentType<any>>;
   type: ActionType;
 }
 

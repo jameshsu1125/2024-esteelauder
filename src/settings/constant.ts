@@ -18,6 +18,7 @@ export const LoadingProcessState: TLoadingProcessState = {
 export const InitialState: IState = {
   [ActionType.Page]: PAGE.home,
   [ActionType.LoadingProcess]: LoadingProcessState,
+  [ActionType.Node]: '',
 };
 
 export const Context = createContext<TContext>([InitialState, () => {}]);
