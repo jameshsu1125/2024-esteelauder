@@ -1,3 +1,4 @@
+import { install } from '@/common/path';
 import Drawer from '@/components/drawer';
 import LoadingProcess from '@/components/loadingProcess';
 import { PAGE } from '@/settings/config';
@@ -13,6 +14,8 @@ Fetcher.install({
   contentType: contentType.JSON,
   formatType: formatType.JSON,
 });
+
+install({ baseURL: import.meta.env.VITE_PATH_URI, enabled: false });
 
 const Pages = memo(() => {
   const [context] = useContext(Context);

@@ -20,6 +20,15 @@ export default defineConfig(async ({ mode }) => {
         input: {
           index: resolve(__dirname, 'src/pages/index.html'),
         },
+        output: {
+          assetFileNames: (assetInfo) => {
+            let extType = assetInfo.name.split('.').at(1);
+            if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
+              extType = 'img';
+            }
+            return `assets/${extType}/[name]-[extname]`;
+          },
+        },
       },
     },
     css: {
@@ -29,6 +38,7 @@ export default defineConfig(async ({ mode }) => {
           globalVars: {
             mainColor: 'red',
           },
+          // rootpath: 'http://cdn.example.com/assets/',
         },
       },
     },

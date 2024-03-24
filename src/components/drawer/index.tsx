@@ -7,7 +7,7 @@ const Drawer = memo(({ children }: IReactProps) => {
   const [, setContext] = useContext(Context);
   useEffect(() => {}, []);
   return (
-    <div className='drawer lg:drawer-open'>
+    <div className='drawer'>
       <input id='my-drawer-2' type='checkbox' className='drawer-toggle' />
       <div className='drawer-content flex flex-col items-center justify-start [&>*]:w-full'>
         {children}
