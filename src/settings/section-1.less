@@ -1,0 +1,29 @@
+.section-1 {
+  position: relative;
+  padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
+  width: 100%;
+  background-image: url(@img);
+  background-size: 100%;
+
+  @index: 1;
+  @img: './img/tm-lg-@{index}.jpg';
+
+  @media only screen and (max-width: 1363px) {
+    & {
+      padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
+      background-image: url(@img);
+
+      @img: './img/tm-md-@{index}.jpg';
+    }
+  }
+
+  & > div {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+
+    .bg {
+      background-image: url('./img/bg-lg-1.jpg');
+      background-size: 100%;
+      @apply w-full h-full absolute top-0 left-0 opacity-90;
+    }
+  }
+}

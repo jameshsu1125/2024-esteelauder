@@ -2,8 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('./section-0.less');
+@import url('./section-1.less');
+@import url('./section-2.less');
+@import url('./section-3.less');
+@import url('./section-4.less');
+@import url('./section-5.less');
+@import url('./section-6.less');
+@import url('./section-7.less');
+@import url('./section-8.less');
+
 body {
   margin: 0;
+  font-family: OptimaDisplayLight, 'Microsoft YaHei', 'Microsoft JhengHei', 'Hiragino Sans GB',
+    STHeiti, sans-serif, Tahoma, arial;
 
   text-size-adjust: none;
   overscroll-behavior: none;
@@ -13,4 +25,19 @@ body {
   .App {
     @apply absolute h-full w-full;
   }
+}
+
+.Section {
+  max-width: 1363px;
+  @apply w-full bg-gray-500;
+
+  @media only screen and (max-width: 1363px) {
+    & {
+      max-width: 768px;
+    }
+  }
+}
+
+.Home {
+  @apply w-full flex justify-center;
 }

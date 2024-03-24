@@ -1,5 +1,4 @@
 import { memo, useEffect } from 'react';
-import './index.less';
 import { IReactProps } from '@/settings/type';
 
 const Section = memo(({ children }: IReactProps) => {

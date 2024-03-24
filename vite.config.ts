@@ -26,7 +26,7 @@ export default defineConfig(async ({ mode }) => {
             if (/png|jpe?g|svg|gif|tiff|bmp|ico/i.test(extType)) {
               extType = 'img';
             }
-            return `assets/${extType}/[name]-[extname]`;
+            return `${extType}/[name][extname]`;
           },
         },
       },
