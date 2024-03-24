@@ -36,7 +36,7 @@ export type TLoadingProcessState = {
 export interface IState {
   page?: string;
   loadingProcess?: TLoadingProcessState;
-  node: LazyExoticComponent<ComponentType<any>>;
+  node: ReactNode;
 }
 
 export interface IAction {

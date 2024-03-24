@@ -1,4 +1,5 @@
 import Container from '@/components/container';
+import Section from '@/components/section';
 import { memo, useState } from 'react';
 import { HomeContext, HomeState, THomeState } from './config';
 import './index.less';
@@ -10,7 +11,9 @@ const Home = memo(() => {
     <div className='Home'>
       <HomeContext.Provider value={[state, setState]}>
         <Container>
-          <div />
+          <Section>
+            <div className='w-full bg-black'></div>
+          </Section>
         </Container>
       </HomeContext.Provider>
     </div>

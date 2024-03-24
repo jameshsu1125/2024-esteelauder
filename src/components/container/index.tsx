@@ -28,7 +28,9 @@ const Container = memo(({ children }: IReactProps) => {
         </button>
       </div>
       <div className='w-full flex justify-center'>
-        <div className='w-full max-w-[1336px] bg-white text-black'>{children}</div>
+        <div className='w-full max-w-[1336px] bg-white flex justify-center text-black'>
+          {children}
+        </div>
       </div>
     </div>
   );

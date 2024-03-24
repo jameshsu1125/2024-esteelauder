@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@faker-js/faker": "^8.4.1",
+    "lesca-cdn-path": "^2.0.6",
     "lesca-click": "^4.3.5",
     "lesca-fetcher": "^1.1.7",
     "lesca-react-onload": "^1.0.15",
