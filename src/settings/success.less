@@ -1,0 +1,94 @@
+.success {
+  position: relative;
+  padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
+  width: 100%;
+  background-size: 100%;
+
+  @index: 0;
+  @img: './img/tm-lg-success.jpg';
+
+  @media only screen and (max-width: 1363px) {
+    & {
+      padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
+
+      @img: './img/tm-md-success.jpg';
+    }
+  }
+
+  & > div {
+    @apply absolute top-0 left-0 right-0 bottom-0;
+
+    & > div {
+      @apply relative;
+    }
+
+    .bg {
+      background-image: url('./img/bg-lg-success.jpg');
+      background-size: 100%;
+      @apply w-full h-full absolute top-0 left-0;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          background-image: url(@img);
+
+          @img: './img/bg-md-success.jpg';
+        }
+      }
+    }
+    .t0 {
+      top: 67%;
+      width: 100%;
+      color: #08124e;
+      font-size: 1.23rem;
+      line-height: 1.76rem;
+      @apply absolute text-center;
+
+      div {
+        @apply flex flex-row justify-center;
+      }
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 58%;
+          font-size: 1.92rem;
+          line-height: 2.7rem;
+
+          div {
+            margin-top: 1.6%;
+            @apply flex-col;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(30 / 7.5 * 1vw);
+          line-height: 5.7vw;
+          div {
+          }
+        }
+      }
+    }
+
+    .t1 {
+      bottom: 9.4px;
+      color: #5f5e5e;
+      font-size: 0.9rem;
+      @apply absolute w-full flex flex-row justify-center space-x-3;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          bottom: 20.4px;
+          @apply flex-col items-center;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          bottom: 2.7vw;
+          font-size: calc(14 / 7.5 * 1vw);
+        }
+      }
+    }
+  }
+}
