@@ -2,7 +2,6 @@
   position: relative;
   padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
   width: 100%;
-  background-image: url(@img);
   background-size: 100%;
 
   @index: 8;
@@ -11,7 +10,6 @@
   @media only screen and (max-width: 1363px) {
     & {
       padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
-      background-image: url(@img);
 
       @img: './img/tm-md-@{index}.jpg';
     }
@@ -20,10 +18,15 @@
   & > div {
     @apply absolute top-0 left-0 right-0 bottom-0;
 
+    & > div {
+      @apply relative;
+    }
+
     .bg {
       background-image: url('./img/bg-lg-@{index}.jpg');
       background-size: 100%;
-      @apply w-full h-full absolute top-0 left-0 opacity-90;
+      background-repeat: no-repeat;
+      @apply w-full h-full absolute top-0 left-0;
 
       @media only screen and (max-width: 1363px) {
         & {
@@ -31,6 +34,80 @@
           background-image: url(@img);
 
           @img: './img/bg-md-@{index}.jpg';
+        }
+      }
+    }
+
+    .t0 {
+      top: 48%;
+      left: 68%;
+      color: #000033;
+      font-size: 1.25rem;
+      @apply absolute text-center;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 71.5%;
+          left: 0;
+          width: 100%;
+          font-size: 1.6rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(24.7 / 7.5 * 1vw);
+        }
+      }
+    }
+
+    .t1 {
+      top: 61.2%;
+      left: 65.1%;
+      color: #000033;
+      font-size: 1.57rem;
+      line-height: 2.24rem;
+      @apply absolute text-center;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 79.4%;
+          left: 0;
+          width: 100%;
+          font-size: 2.1rem;
+          line-height: 2.7rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(32.5 / 7.5 * 1vw);
+          line-height: 5.7vw;
+        }
+      }
+    }
+
+    .t2 {
+      top: 89.8%;
+      left: 67%;
+      color: #333;
+      font-size: 0.73rem;
+      @apply absolute text-center;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 94.7%;
+          left: 0;
+          width: 100%;
+          font-size: 0.79rem;
+          line-height: 1.2rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(11.8 / 7.5 * 1vw);
+          line-height: 2.5vw;
         }
       }
     }
