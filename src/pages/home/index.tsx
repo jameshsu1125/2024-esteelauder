@@ -13,7 +13,15 @@ const Home = memo(() => {
           <Section>
             <div className='section-0'>
               <div>
-                <div className='bg'></div>
+                <div className='bg' />
+                <div className='t0'>
+                  <span>
+                    96%一夜有感<sup>1</sup>
+                  </span>
+                  <span>
+                    4hr啟動膠原回彈肌<sup>2</sup>
+                  </span>
+                </div>
               </div>
             </div>
             <div className='section-1'>

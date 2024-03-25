@@ -20,10 +20,56 @@
   & > div {
     @apply absolute top-0 left-0 right-0 bottom-0;
 
+    & > div {
+      @apply relative;
+    }
+
     .bg {
-      background-image: url('./img/bg-lg-0.jpg');
+      background-image: url('./img/bg-lg-@{index}.jpg');
       background-size: 100%;
       @apply w-full h-full absolute top-0 left-0 opacity-90;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
+          background-image: url(@img);
+
+          @img: './img/bg-md-@{index}.jpg';
+        }
+      }
+    }
+
+    .t0 {
+      top: 50%;
+      left: 5.7%;
+      margin-top: -10.2%;
+      font-size: 3.3rem;
+      // font-size: calc(28.3 / 7.5 * 1vw);
+      line-height: 120%;
+      @apply text-white flex flex-col items-center absolute;
+
+      sup {
+        top: -1.3rem;
+        font-size: 1.7rem;
+        // font-size: calc(10.8 / 7.5 * 1vw);
+      }
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 0;
+          left: 0;
+          margin-top: 19%;
+          margin-left: 0;
+          font-size: 3.8rem;
+          @apply w-full;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(58.3 / 7.5 * 1vw);
+        }
+      }
     }
   }
 }

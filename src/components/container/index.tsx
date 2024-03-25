@@ -23,8 +23,8 @@ const Container = memo(({ children }: IReactProps) => {
           onClick={() => {
             const node = context[ActionType.Node];
             const html = ReactDOMServer.renderToString(node as unknown as ReactNode);
-            const cssURL = `<link rel="stylesheet" crossorigin href="./assets/css/index.css" /><link rel="stylesheet" crossorigin href="./assets/css/index2.css" />`;
-            navigator.clipboard.writeText(cssURL + html);
+            // const cssURL = `<link rel="stylesheet" crossorigin href="./assets/css/index.css" /><link rel="stylesheet" crossorigin href="./assets/css/index2.css" />`;
+            navigator.clipboard.writeText('<div class="Home">' + html + '</div>');
             alert('copied');
           }}
         >
