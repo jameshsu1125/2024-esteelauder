@@ -252,7 +252,7 @@ const Home = memo(() => {
                   產品中奇蹟辣木、藻類萃取、聖保羅草萃取、維他命E配方相互作用下，相較於未使用之對照組，經24小時後之實驗結果。
                 </div>
                 <div className='video'>
-                  <video controls autoPlay playsInline muted>
+                  <video controls autoPlay playsInline muted loop>
                     <source
                       src='https://www.esteelauder.com.tw/media/export/cms/2403S+ANR//video.mp4'
                       type='video/mp4'
