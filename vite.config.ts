@@ -38,7 +38,7 @@ export default defineConfig(async ({ mode }) => {
           globalVars: {
             mainColor: 'red',
           },
-          // rootpath: 'http://cdn.example.com/assets/',
+          rootpath: 'https://www.esteelauder.com.tw/media/export/cms/2403S+ANR/',
         },
       },
     },
