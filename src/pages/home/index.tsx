@@ -516,18 +516,34 @@ const Home = memo(() => {
                 </div>
                 <div className='b0'>
                   <a
+                    href='https://line.esteelauder.com.tw/OnlineShop/preorder?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
+                    target='_blank'
+                  >
+                    <button>線上點線下取</button>
+                  </a>
+                </div>
+                <div className='c0'>
+                  <a
                     href='https://www.esteelauder.com.tw/product/13777/128888/promotions/setsgifts/advanced-night-repair?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
-                    <button>立即購買</button>
+                    <button>官網直購</button>
                   </a>
                 </div>
                 <div className='b1'>
                   <a
+                    href='https://line.esteelauder.com.tw/OnlineShop/preorder?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
+                    target='_blank'
+                  >
+                    <button>線上點線下取</button>
+                  </a>
+                </div>
+                <div className='c1'>
+                  <a
                     href='https://www.esteelauder.com.tw/setsgifts?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
-                    <button>立即購買</button>
+                    <button>官網直購</button>
                   </a>
                 </div>
                 <div className='f0'>母親節特惠組數量有限，售完為止。</div>
