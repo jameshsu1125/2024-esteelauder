@@ -10,10 +10,16 @@
 
   @media only screen and (max-width: 1363px) {
     & {
-      margin-top: -9px;
+      margin-top: -19px;
       padding-bottom: (unit(image-height(@img) / unit(image-width(@img))) * 100%);
 
       @img: './img/tm-md-@{index}.jpg';
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    & {
+      margin-top: -2.4vw;
     }
   }
 
