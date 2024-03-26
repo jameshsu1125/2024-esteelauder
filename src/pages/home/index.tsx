@@ -252,8 +252,11 @@ const Home = memo(() => {
                   產品中奇蹟辣木、藻類萃取、聖保羅草萃取、維他命E配方相互作用下，相較於未使用之對照組，經24小時後之實驗結果。
                 </div>
                 <div className='video'>
-                  <video controls>
-                    <source src='video.mp4' type='video/mp4' />
+                  <video controls autoPlay playsInline muted>
+                    <source
+                      src='https://www.esteelauder.com.tw/media/export/cms/2403S+ANR//video.mp4'
+                      type='video/mp4'
+                    />
                   </video>
                 </div>
               </div>
@@ -512,7 +515,7 @@ const Home = memo(() => {
                 </div>
                 <div className='t1'>
                   <span>$5,280</span>
-                  <div>價值$7,718</div>
+                  <div>價值$7,242</div>
                 </div>
                 <div className='b0'>
                   <a
@@ -575,7 +578,7 @@ const Home = memo(() => {
                 </div>
               </div>
             </div>
-            <div id='form_iframe' className='py-56 bg-black text-white text-center'></div>
+            <div id='form_iframe'></div>
           </Section>
         </Container>
       </HomeContext.Provider>
