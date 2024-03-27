@@ -414,5 +414,48 @@
         }
       }
     }
+
+    .hash0,
+    .hash1 {
+      font-size: 2.2rem;
+      @apply absolute text-white text-center;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          width: 50%;
+          font-size: 1.5rem;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        & {
+          font-size: calc(23.5 / 7.5 * 1vw);
+        }
+      }
+    }
+
+    .hash0 {
+      top: 80.8%;
+      left: 27.8%;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 52.5%;
+          left: 0;
+        }
+      }
+    }
+
+    .hash1 {
+      top: 80.8%;
+      left: 57.2%;
+
+      @media only screen and (max-width: 1363px) {
+        & {
+          top: 52.5%;
+          left: 50%;
+        }
+      }
+    }
   }
 }

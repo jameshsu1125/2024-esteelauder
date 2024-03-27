@@ -52,7 +52,7 @@ const Home = memo(() => {
                 </div>
                 <div className='t6'>
                   <a
-                    href='https://www.esteelauder.com.tw/product/688/97387/product-catalog/revitalizing-supreme/night-creme'
+                    href='https://www.esteelauder.com.tw/product/681/127822/product-catalog/revitalizing-supreme?size=75ml?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
                     <button>立即購買</button>
@@ -329,7 +329,7 @@ const Home = memo(() => {
                 <div className='t9'>#小棕瓶</div>
                 <div className='t10'>
                   <a
-                    href='https://www.esteelauder.com.tw/product/688/97387/product-catalog/revitalizing-supreme/night-creme'
+                    href='https://www.esteelauder.com.tw/product/681/127822/product-catalog/revitalizing-supreme?size=75ml?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
                     <button>立即購買</button>
@@ -422,13 +422,15 @@ const Home = memo(() => {
                 </div>
                 <div className='t15'>
                   <a
-                    href='https://www.esteelauder.com.tw/product/688/97387/product-catalog/revitalizing-supreme/night-creme'
+                    href='https://www.esteelauder.com.tw/product/681/127822/product-catalog/revitalizing-supreme?size=75ml?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
                     <button>立即購買</button>
                   </a>
                 </div>
                 <div className='t16'>1 28位亞洲女性使用產品一次，4小時後之臨床實驗結果。</div>
+                <div className='hash0'>#無敵膠原霜</div>
+                <div className='hash1'>#膠原藍霜</div>
               </div>
             </div>
             <div className='section-6'>
@@ -543,7 +545,7 @@ const Home = memo(() => {
                 </div>
                 <div className='c1'>
                   <a
-                    href='https://www.esteelauder.com.tw/setsgifts?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
+                    href='https://www.esteelauder.com.tw/product/681/127822/product-catalog/revitalizing-supreme?size=75ml?utm_medium=referral&utm_source=online&utm_campaign=product_engagement&utm_content=brand-supreme-mpp_2403&utm_term=brand'
                     target='_blank'
                   >
                     <button>官網直購</button>
