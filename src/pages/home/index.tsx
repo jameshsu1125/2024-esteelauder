@@ -112,7 +112,7 @@ const Home = memo(() => {
                       柔嫩細緻
                     </div>
                   </div>
-                  <div>掌控及提升肌膚結構網絡彈性</div>
+                  <div>確保第1型與第3型膠原蛋白緊密排列</div>
                   <label>
                     <input type='checkbox' />
                     <div className='open'></div>
